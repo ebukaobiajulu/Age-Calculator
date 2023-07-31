@@ -1,0 +1,126 @@
+@media screen and (max-width: 760px) {
+  body {
+    background-color: red;
+  }
+}
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 86%);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-start {
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.flex-column {
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+input {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 1px hsl(0, 0%, 86%);
+  outline: none;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+label {
+  color: hsl(0, 1%, 44%);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 0%, 100%);
+  padding: 3rem;
+  border-radius: 10px;
+  border-end-end-radius: 30%;
+  width: 40%;
+}
+
+.width150 {
+  width: 150%;
+}
+
+.btn {
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+.btn box-icon {
+  transform: scale(1.3);
+}
+
+.horizontal-line {
+  height: 1px;
+  width: 100%;
+  background-color: hsl(0, 0%, 86%);
+}
+
+.computation-info {
+  font-weight: 800;
+}
+.computation-info h1 {
+  font-size: 3rem;
+}
+.computation-info span {
+  color: hsl(259, 100%, 65%);
+  font-size: 3rem;
+  margin-right: 0.3125rem;
+}
+
+small {
+  font-weight: 400;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+  font-size: 0.6rem;
+  position: absolute;
+  top: 25%;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    padding: 3rem 1rem;
+    border-end-end-radius: 20%;
+    width: 90%;
+    margin: auto;
+  }
+  input {
+    width: 100%;
+    height: 40px;
+  }
+  .computation-info h1 {
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+  .computation-info span {
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+}/*# sourceMappingURL=main.css.map */

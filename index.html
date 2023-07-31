@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="./SASS/main.css">
+
+    <!-- Box Icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form action="" id="form-control" class="flex">
+                <div class="day-field flex flex-column flex-start">
+                    <label for="day">DAY</label>
+                    <input type="number" class="day error" name="day">
+                    <small class="error-text-day"></small>
+                </div>
+                <div class="month-field flex flex-column flex-start">
+                    <label for="month">MONTH</label>
+                    <input type="number" class="month error" name="month">
+                    <small class="error-text-month"></small>
+                </div>
+                <div class="year-field flex flex-column flex-start">
+                    <label for="year">YEAR</label>
+                    <input type="number" class="year error" name="year">
+                    <small class="error-text-year"></small>
+                </div>
+
+            </form>
+
+            <div class="button-section flex ">
+                <div class="horizontal-line"></div>
+                <button class="btn flex"><box-icon name='chevrons-down' type='solid' color="#fff" ></box-icon></button>
+                <!-- <button class="btns flex"><box-icon name='chevrons-down' type='solid' color="#fff" ></box-icon></button> -->
+            </div>
+
+            <section class="computation-info">
+                <div class="years-text flex"><span class="yearsCount">--</span><h1>years</h1></div>
+                <div class="months-text flex"><span class="monthsCount">--</span><h1>months</h1></div>
+                <div class="days-text flex"><span class="daysCount">--</span><h1>days</h1></div>
+            </section>
+        </div>
+        
+        
+        
+        
+    </main>
+
+
+
+
+    <!-- Script -->
+    <script src="./app.js"></script>
+</body>
+</html>
